@@ -1,0 +1,90 @@
+$bg-color: #efefef;
+
+.content {
+    display: flex;
+
+    &__wrapper{
+        width: 80%;
+    }
+
+    h2 span {
+        font-weight: 400;
+    }
+
+    &__search {
+        display: flex;
+        align-items: center;
+        margin: 30px 0 50px;
+        background-color: $bg-color;
+        max-width: 20%;
+        padding-left: 20px;
+
+        &__input {
+            background-color: $bg-color;
+            border: none;
+            padding: 15px;
+            width: 80%;
+        }
+    }
+
+    &__trip {
+        &__cards {
+            display: flex;
+            overflow-x: scroll;
+            gap: 100px;
+        }
+
+        &__card {
+            display: flex;
+            flex-direction: column;
+            transition: all .3s;
+            flex: 0 0 20%;
+            background-color: #f2f2f2;
+            min-width: 200px;
+
+            &__image {
+                background-color: #999999;
+                width: 100%;
+                height: 200px;
+            }
+
+            &__city {
+                font-weight: 700;
+                font-size: 0.8em;
+                padding: 10px 10px 0 30px;
+            }
+
+            &__dates {
+                color: #838383;
+                font-size: 0.8em;
+                padding: 10px 10px 10px 30px;
+            }
+        }
+
+        &__add {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            min-width: 200px;
+            height: 200px;
+            background-color: $bg-color;
+            border: none;
+
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+
+    h3{
+        font-weight: 400;
+        margin: 50px 0;
+    }
+
+    &__weather{
+        display: flex;
+        gap: 30px;
+    }
+}
